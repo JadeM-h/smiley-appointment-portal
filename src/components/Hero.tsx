@@ -18,7 +18,7 @@ const Hero = () => {
           <Link to="/book">Book an appointment</Link>
         </Button>
       </div>
-      <div className="relative z-10 mt-12">
+      <div className="relative z-10 mt-12 rounded-full">
         <div className="grid grid-cols-3 gap-4 max-w-5xl mx-auto px-4">
           <img src="/lovable-uploads/happy-patient-1.jpg" alt="Happy Patient" className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300" />
           <img alt="Dental Team" className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300" src="/lovable-uploads/8a24a6ee-66a7-41f8-a09e-9eda16c0553e.jpg" />
