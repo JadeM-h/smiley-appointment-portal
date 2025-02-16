@@ -7,7 +7,6 @@ import Services from '@/components/Services';
 import Technologies from '@/components/Technologies';
 import Contact from '@/components/Contact';
 import ChatBot from '@/components/ChatBot';
-import ToothModel from '@/components/ToothModel';
 import { Button } from '@/components/ui/button';
 import { CalendarDays } from 'lucide-react';
 
@@ -19,12 +18,6 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <div className="max-w-7xl mx-auto px-4 py-12">
-          <h2 className="text-3xl font-bold text-center mb-8">Interactive 3D Tooth Model</h2>
-          <div className="max-w-2xl mx-auto">
-            <ToothModel />
-          </div>
-        </div>
         <Services />
         <Technologies />
         <Contact />
