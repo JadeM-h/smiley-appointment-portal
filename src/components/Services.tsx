@@ -1,27 +1,27 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import { Tooth, Stethoscope, Camera, Baby } from 'lucide-react';
+import { Heart, Sparkles, Scan, Users } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: <Tooth className="w-12 h-12 text-green-500" />,
+      icon: <Heart className="w-12 h-12 text-green-500" />,
       title: "General Dentistry",
       description: "Comprehensive dental care for all your oral health needs"
     },
     {
-      icon: <Stethoscope className="w-12 h-12 text-green-500" />,
+      icon: <Sparkles className="w-12 h-12 text-green-500" />,
       title: "Cosmetic Dentistry",
       description: "Transform your smile with our advanced cosmetic treatments"
     },
     {
-      icon: <Camera className="w-12 h-12 text-green-500" />,
+      icon: <Scan className="w-12 h-12 text-green-500" />,
       title: "Digital X-Rays",
       description: "State-of-the-art imaging for precise diagnostics"
     },
     {
-      icon: <Baby className="w-12 h-12 text-green-500" />,
+      icon: <Users className="w-12 h-12 text-green-500" />,
       title: "Pediatric Dentistry",
       description: "Specialized care for our youngest patients"
     }
