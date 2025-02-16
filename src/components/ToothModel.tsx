@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { OrbitControls as OrbitControlsImpl } from 'three/examples/jsm/controls/OrbitControls.js';
 
 const ToothModel = () => {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -32,7 +32,7 @@ const ToothModel = () => {
     scene.add(directionalLight);
 
     // Add controls
-    const controls = new OrbitControls(camera, renderer.domElement);
+    const controls = new OrbitControlsImpl(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
 
