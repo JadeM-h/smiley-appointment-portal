@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
 const Hero = () => {
-  return (
-    <section className="hero-section">
+  return <section className="hero-section">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[url('/lovable-uploads/f0f88bb8-49bf-4001-979b-f651850ef775.png')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white/90" />
@@ -23,25 +20,11 @@ const Hero = () => {
       </div>
       <div className="relative z-10 mt-12">
         <div className="grid grid-cols-3 gap-4 max-w-5xl mx-auto px-4">
-          <img 
-            src="/lovable-uploads/happy-patient-1.jpg" 
-            alt="Happy Patient" 
-            className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
-          />
-          <img 
-            src="/lovable-uploads/dental-team.jpg" 
-            alt="Dental Team" 
-            className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
-          />
-          <img 
-            src="/lovable-uploads/modern-clinic.jpg" 
-            alt="Modern Clinic" 
-            className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
-          />
+          <img src="/lovable-uploads/happy-patient-1.jpg" alt="Happy Patient" className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300" />
+          <img alt="Dental Team" className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300" src="/lovable-uploads/8a24a6ee-66a7-41f8-a09e-9eda16c0553e.jpg" />
+          <img src="/lovable-uploads/modern-clinic.jpg" alt="Modern Clinic" className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
