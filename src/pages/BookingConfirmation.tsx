@@ -8,13 +8,13 @@ import { CheckCircle, Calendar, Clock, User, Phone, Mail, Stethoscope } from 'lu
 
 const BookingConfirmation = () => {
   const location = useLocation();
-  const bookingData = {
-    name: "John Doe",
-    email: "john@example.com",
-    phone: "(555) 123-4567",
-    date: "2024-03-20",
-    time: "14:30",
-    service: "General Dentistry"
+  const bookingData = location.state || {
+    name: "No name provided",
+    email: "No email provided",
+    phone: "No phone provided",
+    date: "No date provided",
+    time: "No time provided",
+    service: "No service provided"
   };
 
   return (

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -8,22 +9,25 @@ import { Calendar } from 'lucide-react';
 const Blog = () => {
   const posts = [
     {
+      slug: 'dental-checkups',
       title: "The Importance of Regular Dental Check-ups",
       date: "March 15, 2024",
       excerpt: "Learn why regular dental check-ups are crucial for maintaining optimal oral health...",
-      image: "/lovable-uploads/8a24a6ee-66a7-41f8-a09e-9eda16c0553e.jpg"
+      image: "/lovable-uploads/2ac61c5b-9571-4cb8-abc9-ab59d0daa2d7.jpg"
     },
     {
+      slug: 'oral-hygiene',
       title: "Tips for Maintaining Good Oral Hygiene",
       date: "March 10, 2024",
       excerpt: "Discover the best practices for keeping your teeth and gums healthy...",
       image: "/lovable-uploads/8a24a6ee-66a7-41f8-a09e-9eda16c0553e.jpg"
     },
     {
+      slug: 'dental-technology',
       title: "Latest Advancements in Dental Technology",
       date: "March 5, 2024",
       excerpt: "Explore the cutting-edge technologies revolutionizing dental care...",
-      image: "/lovable-uploads/8a24a6ee-66a7-41f8-a09e-9eda16c0553e.jpg"
+      image: "/lovable-uploads/f0f88bb8-49bf-4001-979b-f651850ef775.png"
     }
   ];
 
@@ -51,13 +55,12 @@ const Blog = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <Button variant="outline" className="w-full">Read More</Button>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to={`/blog/${post.slug}`}>Read More</Link>
+                  </Button>
                 </div>
               </Card>
             ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Button>Load More Posts</Button>
           </div>
         </div>
       </main>
