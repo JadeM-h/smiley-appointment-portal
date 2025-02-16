@@ -10,6 +10,8 @@ import BookingPage from "./pages/Booking";
 import BookingConfirmation from "./pages/BookingConfirmation";
 import Location from "./pages/Location";
 import ContactPage from "./pages/ContactPage";
+import Careers from "./pages/Careers";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/booking-confirmation" element={<BookingConfirmation />} />
           <Route path="/location" element={<Location />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
